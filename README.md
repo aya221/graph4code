@@ -1,16 +1,20 @@
-# Setup
+# Building the graph database
+## Setup
 
 To build the graph, first create a new conda environmet using:
+
    `conda create -n graph1 python=3.8 openjdk=8`
    
 and install Ruby:
 
    `conda install ruby`
-# load the graphdatabase:
+   
+## load the graphdatabase:
 in the scripts directory run the load_graph4code script:
 
    `./load_graph4code.sh`
-  
+   
+Warning: this script could take several days to finish executing.
 
 # Create your own graph
 
