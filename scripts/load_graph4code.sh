@@ -29,10 +29,11 @@ tar -xzf apache-jena-3.16.0.tar.gz
 
 cd $SOURCE_DIR
 chmod +x *.sh
-#./download_graph.sh $QUADS_LOC
+./download_graph.sh $QUADS_LOC
 
 echo "-------Build Graph4Code JENA DB-----"
 cd $SOURCE_DIR
+# this command could take days to finish. It is best to run it ina screen or tmux session.
 ./build_graph.sh $JENA_LOC $QUADS_LOC $JENA_DB_LOC
 
 echo "-------Launch FUSEKI over Graph4Code JENA DB: log available at $FUSEKI_LOC/log-----"
